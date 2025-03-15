@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*configuração de outras telas*/
+/*Tablets:*/
+@media screen and (min-width: 760px) and (max-width:992px){
+    body{
+       font-size: 1.11em; 
+    }
+}
+
+/*Desktop:*/
+@media screen and (min-width: 993px){
+    body{
+        font-size: 1.25em;
+    }
+}
