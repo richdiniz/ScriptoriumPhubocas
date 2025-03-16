@@ -77,7 +77,7 @@ header>h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.287);
 }
 body{
-    background-color: #aa8aac;
+    background-color: #ffffff;
 }
 nav{
     background-color: #031f39;
@@ -98,7 +98,7 @@ nav>a:hover{
     color:var(--cor0);
 }
 main{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     min-width:300px;
     max-width: 1000px;
     margin: auto;
