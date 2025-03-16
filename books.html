@@ -16,13 +16,48 @@
             color:#30fe41;
         }
         main{
-            background-color:  #ffffff01;
+            background-color:  #ffffffd5;
         }
         body{
            background-color:  #000000;
         }
         p{
             color:white
+        }
+        img{
+            width: 170px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #2b58ad;
+            color: white;
+        }
+        img {
+            width: 80px;
+            height: 120px;
+        }
+        .btn-download {
+            text-decoration: none;
+            color: white;
+            background: green;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-download:hover {
+            background: darkgreen;
         }
     </style>
 </head>
@@ -31,6 +66,36 @@
         <h1>Repositório de Livros</h1>
     </header>
     <main>
+        <table>
+            <tr>
+                <th>Livro</th>
+                <th>Autor</th>
+                <th>Sinopse</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/736x/4b/20/a2/4b20a27c89c33f2b45fa0c3cc4ec0f5e.jpg" alt="Capa do Livro"></td>
+                <td>Machado de Assis</td>
+                <td>Um dos maiores clássicos da literatura brasileira, contando a história de Bentinho e Capitu.</td>
+                <td><a href="#" class="btn-download">Baixar</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/80x120" alt="Capa do Livro"></td>
+                <td>J.R.R. Tolkien</td>
+                <td>Uma jornada épica pela Terra Média para destruir o Anel do Poder.</td>
+                <td><a href="#" class="btn-download">Baixar</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/80x120" alt="Capa do Livro"></td>
+                <td>George Orwell</td>
+                <td>Uma distopia clássica sobre um governo totalitário e a vigilância extrema.</td>
+                <td><a href="#" class="btn-download">Baixar</a></td>
+            </tr>
+        </table>
+        <br>
+        <!--
+        <li><img src="https://i.pinimg.com/736x/4b/20/a2/4b20a27c89c33f2b45fa0c3cc4ec0f5e.jpg" alt=""></li>
+        -->
         <ul>
             <li><a href="https://www.mediafire.com/file/3pob219tjxc5o92/1984.pdf/file" target="_blank">1984</a></li>
             <li><a href="https://www.mediafire.com/file/07z1y3eeerqbc2x/Admiravel_Mundo_Novo.pdf/file" target="_blank">Admiravel mundo novo</a></li>
