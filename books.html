@@ -37,7 +37,9 @@
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
-            text-align: center;
+            text-align: left;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         th {
             background-color: #600068;
@@ -57,6 +59,13 @@
         }
         .btn-download:hover {
             background: darkgreen;
+        }
+        @media screen and (max-width:768px){
+            table{
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
