@@ -60,6 +60,14 @@
         .btn-download:hover {
             background: darkgreen;
         }
+
+        #book-count {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #3b093f;
+            text-align: center;
+        }
         @media screen and (max-width:768px){
             table{
                 display: block;
@@ -72,6 +80,7 @@
 <body>
     <header>
         <h1>Repositório de Livros</h1>
+       <p id="book-count">Carregando...</p>
     </header>
     <main>
         <table>
@@ -210,5 +219,16 @@
             </tr>
         </table>
     </main>
+    <script>       
+    //CONTAGEM DE LIVROS:
+                document.addEventListener("DOMContentLoaded", function () { 
+                    const bookLinks = document.querySelectorAll("td a"); // Seleciona os links de download
+                    const bookCountElement = document.getElementById("book-count");
+
+                    if (bookCountElement) {
+                        bookCountElement.textContent = "Existem " +bookLinks.length+" livros disponiveis📚";
+                    }
+                });
+    </script>
 </body>
 </html>

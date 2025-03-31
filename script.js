@@ -31,30 +31,3 @@ document.addEventListener("DOMContentLoaded", function () {
         themeToggle.textContent = body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Escuro";
     }
 });
-
-
-/*
-document.addEventListener("DOMContentLoaded", function () {
-    const themeToggle = document.getElementById("theme-toggle");
-    const body = document.body;
-
-    // Verifica se há um tema salvo no localStorage
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        themeToggle.textContent = "Modo Claro";
-    }
-
-    themeToggle.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-
-        // Salva a preferência no localStorage
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
-            themeToggle.textContent = "Modo Claro";
-        } else {
-            localStorage.setItem("theme", "light");
-            themeToggle.textContent = "Modo Escuro";
-        }
-    });
-})
-*/
